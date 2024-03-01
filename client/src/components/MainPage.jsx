@@ -1,8 +1,8 @@
 export default function MainPage() {
   return (
-    <div>
+    <div className='bg-black'>
       <div>
-        <p>
+        <p className=''>
           Hey, Im Eli from a suburb of Pheonix, Arizona. Im currently developing
           my skills as a Software developer
         </p>
