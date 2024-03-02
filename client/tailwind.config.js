@@ -5,6 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       'permanent-marker': ['Permanent Marker', 'cursive'],
+      'kode-mono': ['Kode Mono', 'monospace'],
     },
     fontSize: {
       'xs': '0.75rem',
