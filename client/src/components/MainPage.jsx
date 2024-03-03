@@ -1,7 +1,7 @@
 export default function MainPage() {
   return (
     <>
-      <div>
+      <div className='flex'>
         <ul>
           <li>about</li>
           <li>techs</li>
