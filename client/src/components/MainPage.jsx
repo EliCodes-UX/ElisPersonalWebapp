@@ -4,23 +4,32 @@ export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
   const [showSecondParagraph, setShowSecondParagraph] = useState(false);
   const [showGrid, setShowGrid] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
     const handleScroll = event => {
-      const deltaY = event.deltaY;
+      if (!scrolling) {
+        setScrolling(true);
 
-      if (deltaY > 0 && showFirstParagraph) {
-        setShowFirstParagraph(false);
-        setShowSecondParagraph(true);
-      } else if (deltaY > 0 && showSecondParagraph) {
-        setShowSecondParagraph(false);
-        setShowGrid(true);
-      } else if (deltaY < 0 && showGrid) {
-        setShowGrid(false);
-        setShowSecondParagraph(true);
-      } else if (deltaY < 0 && showSecondParagraph) {
-        setShowSecondParagraph(false);
-        setShowFirstParagraph(true);
+        setTimeout(() => {
+          const deltaY = event.deltaY;
+
+          if (deltaY > 0 && showFirstParagraph) {
+            setShowFirstParagraph(false);
+            setShowSecondParagraph(true);
+          } else if (deltaY > 0 && showSecondParagraph) {
+            setShowSecondParagraph(false);
+            setShowGrid(true);
+          } else if (deltaY < 0 && showGrid) {
+            setShowGrid(false);
+            setShowSecondParagraph(true);
+          } else if (deltaY < 0 && showSecondParagraph) {
+            setShowSecondParagraph(false);
+            setShowFirstParagraph(true);
+          }
+
+          setScrolling(false);
+        }, 1000);
       }
     };
 
@@ -29,7 +38,7 @@ export default function MainPage() {
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
-  }, [showFirstParagraph, showSecondParagraph, showGrid]);
+  }, [showFirstParagraph, showSecondParagraph, showGrid, scrolling]);
 
   return (
     <>
