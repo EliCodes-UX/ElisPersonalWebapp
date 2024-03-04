@@ -5,6 +5,9 @@ export default function MainPage() {
   const [showSecondParagraph, setShowSecondParagraph] = useState(false);
   const [showGrid, setShowGrid] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [firstParaClassName, setFirstParaClassName] = useState('');
+  const [secondParaClassName, setSecondParaClassName] = useState('');
+  const [gridClassName, setGridClassName] = useState('');
 
   useEffect(() => {
     const handleScroll = event => {
@@ -29,7 +32,7 @@ export default function MainPage() {
           }
 
           setScrolling(false);
-        }, 800);
+        }, 1000);
       }
     };
 
@@ -39,6 +42,24 @@ export default function MainPage() {
       window.removeEventListener('wheel', handleScroll);
     };
   }, [showFirstParagraph, showSecondParagraph, showGrid, scrolling]);
+
+  useEffect(() => {
+    setFirstParaClassName(
+      showFirstParagraph
+        ? 'text-sky-500 font-kode-mono font-bold text-2xl animate-fade-up animate-duration-1000 animate-ease-in'
+        : 'hidden'
+    );
+    setSecondParaClassName(
+      showSecondParagraph
+        ? 'text-sky-500 font-kode-mono font-bold text-2xl mt-20 mb-20 animate-fade-up animate-duration-1000 animate-ease-in'
+        : 'hidden'
+    );
+    setGridClassName(
+      showGrid
+        ? 'projectGrid animate-fade-up animate-duration-1000 animate-ease-in'
+        : 'hidden'
+    );
+  }, [showFirstParagraph, showSecondParagraph, showGrid]);
 
   return (
     <>
@@ -51,39 +72,31 @@ export default function MainPage() {
         </ul>
       </div>
       <div className='flex flex-col text-center justify-center h-screen items-center'>
-        {showFirstParagraph && (
-          <div className=' text-sky-500 font-kode-mono font-bold text-2xl'>
-            <p className='animate-fade-up animate-ease-in'>
-              Hey, Im Eli from a suburb of Phoenix, Arizona. <br /> Im currently
-              developing my skills as a Software developer
-            </p>
-          </div>
-        )}
-        {showSecondParagraph && (
-          <div className='animate-fade-up animate-ease-in'>
-            <p className='text-sky-500 font-kode-mono font-bold text-2xl mt-20 mb-20'>
-              Technologies that I am able to program with are <br />
-              Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
-              MongoDB
-            </p>
-          </div>
-        )}
-        {showGrid && (
-          <div className='animate-fade-up animate-ease-in'>
-            <div className='flex items-center justify-center h-screen w-screen'>
-              {/* Grid container */}
-              <div className='grid grid-cols-3 gap-40 bg-white p-20'>
-                {/* Each square */}
-                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-              </div>
+        <div className={firstParaClassName}>
+          <p>
+            Hey, Im Eli from a suburb of Phoenix, Arizona. <br /> Im currently
+            developing my skills as a Software developer
+          </p>
+        </div>
+        <div className={secondParaClassName}>
+          <p>
+            Technologies that I am able to program with are <br />
+            Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
+            MongoDB
+          </p>
+        </div>
+        <div className={gridClassName}>
+          <div className='flex items-center justify-center h-screen w-screen'>
+            <div className='grid grid-cols-3 gap-40 bg-white p-20'>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </>
   );
