@@ -33,12 +33,12 @@ export default function MainPage() {
 
   return (
     <>
-      <div className='flex text-amber-300'>
-        <ul>
-          <li>about</li>
-          <li>techs</li>
-          <li>projects</li>
-          <li>contact</li>
+      <div className='flex justify-start pl-10 text-amber-300 fixed h-screen items-center'>
+        <ul className='flex flex-col text-lg'>
+          <li className='sideBarText'>about</li>
+          <li className='sideBarText'>techs</li>
+          <li className='sideBarText'>projects</li>
+          <li className='sideBarText'>contact</li>
         </ul>
       </div>
       <div className='flex flex-col text-center justify-center h-screen items-center'>
