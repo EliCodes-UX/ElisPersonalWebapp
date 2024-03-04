@@ -61,14 +61,40 @@ export default function MainPage() {
     );
   }, [showFirstParagraph, showSecondParagraph, showGrid]);
 
+  const handleAboutClick = () => {
+    setShowFirstParagraph(true);
+    setShowSecondParagraph(false);
+    setShowGrid(false);
+  };
+
+  const handleTechsClick = () => {
+    setShowFirstParagraph(false);
+    setShowSecondParagraph(true);
+    setShowGrid(false);
+  };
+
+  const handleProjectsClick = () => {
+    setShowFirstParagraph(false);
+    setShowSecondParagraph(false);
+    setShowGrid(true);
+  };
+
   return (
     <>
       <div className='flex justify-start pl-10 text-amber-300 fixed h-screen items-center'>
         <ul className='flex flex-col text-lg'>
-          <li className='sideBarText'>about</li>
-          <li className='sideBarText'>techs</li>
-          <li className='sideBarText'>projects</li>
-          <li className='sideBarText'>contact</li>
+          <li className='sideBarText'>
+            <button onClick={handleAboutClick}>About</button>
+          </li>
+          <li className='sideBarText'>
+            <button onClick={handleTechsClick}>Techs</button>
+          </li>
+          <li className='sideBarText'>
+            <button onClick={handleProjectsClick}>Projects</button>
+          </li>
+          <li className='sideBarText'>
+            <button>Contact</button>
+          </li>
         </ul>
       </div>
       <div className='flex flex-col text-center justify-center h-screen items-center'>
@@ -97,6 +123,7 @@ export default function MainPage() {
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     </>
   );
