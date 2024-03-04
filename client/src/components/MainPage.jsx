@@ -1,7 +1,7 @@
 export default function MainPage() {
   return (
     <>
-      <div className='flex'>
+      <div className='flex text-amber-300'>
         <ul>
           <li>about</li>
           <li>techs</li>
@@ -10,7 +10,7 @@ export default function MainPage() {
         </ul>
       </div>
       <div className='flex text-center justify-center h-full'>
-        <p className='font-kode-mono font-bold text-2xl h-fit'>
+        <p className='text-sky-500 font-kode-mono text-center font-bold text-2xl'>
           Hey, Im Eli from a suburb of Phoenix, Arizona. <br /> Im currently
           developing my skills as a Software developer
         </p>

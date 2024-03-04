@@ -2,16 +2,18 @@ import './App.css';
 import MainPage from './components/MainPage';
 
 function App() {
+  const gifUrl =
+    'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2NsM3NoMGszend3MnBvNW9pbjBoNjF2emF2OWVkd25zdHc4N2M0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHIKETUlUINYvV7CAO/giphy.gif';
+
   return (
-    <body
+    <div
       className='bg-cover bg-center h-screen'
       style={{
-        backgroundImage:
-          "url('https://media1.giphy.com/media/l1Et7Qw1XjvunS0Io/giphy.gif?cid=ecf05e47h986u49iwrnvvfpbrbktvv1wuu5g6cuj0k2y3aw2&ep=v1_gifs_related&rid=giphy.gif&ct=g')",
+        backgroundImage: `url(${gifUrl})`,
       }}
     >
       <MainPage />
-    </body>
+    </div>
   );
 }
 
