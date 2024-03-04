@@ -20,5 +20,5 @@ export default {
       '6xl': '4rem',
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animated')],
 };

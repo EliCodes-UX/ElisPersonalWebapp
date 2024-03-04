@@ -29,7 +29,7 @@ export default function MainPage() {
           }
 
           setScrolling(false);
-        }, 800); // Adjust the timeout duration as needed
+        }, 800);
       }
     };
 
@@ -51,43 +51,39 @@ export default function MainPage() {
         </ul>
       </div>
       <div className='flex flex-col text-center justify-center h-screen items-center'>
-        <p
-          className={`transition-transform duration-500 ${
-            showFirstParagraph
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-10'
-          } text-sky-500 font-kode-mono font-bold text-2xl`}
-        >
-          Hey, Im Eli from a suburb of Phoenix, Arizona. <br /> Im currently
-          developing my skills as a Software developer
-        </p>
-        <p
-          className={`transition-transform duration-500 ${
-            showSecondParagraph
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-10'
-          } text-sky-500 font-kode-mono font-bold text-2xl mt-20 mb-20`}
-        >
-          Technologies that I am able to program with are <br />
-          Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
-          MongoDB
-        </p>
-        <div
-          className={`transition-transform duration-500 ${
-            showGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          } flex items-center justify-center h-screen w-screen`}
-        >
-          {/* Grid container */}
-          <div className='grid grid-cols-3 gap-40 bg-white p-20'>
-            {/* Each square */}
-            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+        {showFirstParagraph && (
+          <div className=' text-sky-500 font-kode-mono font-bold text-2xl'>
+            <p className='animate-fade-up animate-ease-in'>
+              Hey, Im Eli from a suburb of Phoenix, Arizona. <br /> Im currently
+              developing my skills as a Software developer
+            </p>
           </div>
-        </div>
+        )}
+        {showSecondParagraph && (
+          <div className='animate-fade-up animate-ease-in'>
+            <p className='text-sky-500 font-kode-mono font-bold text-2xl mt-20 mb-20'>
+              Technologies that I am able to program with are <br />
+              Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
+              MongoDB
+            </p>
+          </div>
+        )}
+        {showGrid && (
+          <div className='animate-fade-up animate-ease-in'>
+            <div className='flex items-center justify-center h-screen w-screen'>
+              {/* Grid container */}
+              <div className='grid grid-cols-3 gap-40 bg-white p-20'>
+                {/* Each square */}
+                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+                <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
