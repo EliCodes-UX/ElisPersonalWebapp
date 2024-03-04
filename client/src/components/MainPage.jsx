@@ -4,10 +4,12 @@ export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
   const [showSecondParagraph, setShowSecondParagraph] = useState(false);
   const [showGrid, setShowGrid] = useState(false);
+  const [showContact, setShowContact] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [firstParaClassName, setFirstParaClassName] = useState('');
   const [secondParaClassName, setSecondParaClassName] = useState('');
   const [gridClassName, setGridClassName] = useState('');
+  const [contactClassName, setContactClassName] = useState('');
 
   useEffect(() => {
     const handleScroll = event => {
@@ -22,6 +24,12 @@ export default function MainPage() {
             setShowSecondParagraph(true);
           } else if (deltaY > 0 && showSecondParagraph) {
             setShowSecondParagraph(false);
+            setShowGrid(true);
+          } else if (deltaY > 0 && showGrid) {
+            setShowGrid(false);
+            setShowContact(true);
+          } else if (deltaY < 0 && showContact) {
+            setShowContact(false);
             setShowGrid(true);
           } else if (deltaY < 0 && showGrid) {
             setShowGrid(false);
@@ -41,7 +49,13 @@ export default function MainPage() {
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
-  }, [showFirstParagraph, showSecondParagraph, showGrid, scrolling]);
+  }, [
+    showFirstParagraph,
+    showSecondParagraph,
+    showGrid,
+    showContact,
+    scrolling,
+  ]);
 
   useEffect(() => {
     setFirstParaClassName(
@@ -59,24 +73,39 @@ export default function MainPage() {
         ? 'projectGrid animate-fade-up animate-duration-1000 animate-ease-in'
         : 'hidden'
     );
-  }, [showFirstParagraph, showSecondParagraph, showGrid]);
+    setContactClassName(
+      showContact
+        ? 'text-sky-500 font-kode-mono font-bold text-2xl mt-20 mb-20 animate-fade-up animate-duration-1000 animate-ease-in'
+        : 'hidden'
+    );
+  }, [showFirstParagraph, showSecondParagraph, showGrid, showContact]);
 
   const handleAboutClick = () => {
     setShowFirstParagraph(true);
     setShowSecondParagraph(false);
     setShowGrid(false);
+    setShowContact(false);
   };
 
   const handleTechsClick = () => {
     setShowFirstParagraph(false);
     setShowSecondParagraph(true);
     setShowGrid(false);
+    setShowContact(false);
   };
 
   const handleProjectsClick = () => {
     setShowFirstParagraph(false);
     setShowSecondParagraph(false);
     setShowGrid(true);
+    setShowContact(false);
+  };
+
+  const handleContactClick = () => {
+    setShowFirstParagraph(false);
+    setShowSecondParagraph(false);
+    setShowGrid(false);
+    setShowContact(true);
   };
 
   return (
@@ -93,7 +122,7 @@ export default function MainPage() {
             <button onClick={handleProjectsClick}>Projects</button>
           </li>
           <li className='sideBarText'>
-            <button>Contact</button>
+            <button onClick={handleContactClick}>Contact</button>
           </li>
         </ul>
       </div>
@@ -123,7 +152,11 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className='flex flex-col text-center justify-center h-screen items-center'>
+          <div className={contactClassName}>
+            <p>You can contact me and we can build something great</p>
+          </div>
+        </div>
       </div>
     </>
   );
