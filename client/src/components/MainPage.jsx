@@ -19,14 +19,17 @@ export default function MainPage() {
           Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
           MongoDB
         </p>
-        <div className='grid grid-cols-3 gap-4 bg-white h-1/3 w-1/2 items-center justify-center'>
-          {/* Each square */}
-          <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-20 w-20'></div>
-          <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-20 w-20'></div>
-          <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-20 w-20'></div>
-          <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-20 w-20'></div>
-          <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-20 w-20'></div>
-          <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-20 w-20'></div>
+        <div className='flex items-center justify-center h-screen w-screen'>
+          {/* Grid container */}
+          <div className='grid grid-cols-3 gap-40 bg-white p-20'>
+            {/* Each square */}
+            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+            <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+          </div>
         </div>
       </div>
     </>
