@@ -9,10 +9,15 @@ export default function MainPage() {
           <li>contact</li>
         </ul>
       </div>
-      <div className='flex text-center justify-center h-full'>
-        <p className='text-sky-500 font-kode-mono text-center font-bold text-2xl'>
+      <div className='flex flex-col text-center justify-center h-screen items-center'>
+        <p className='text-sky-500 font-kode-mono font-bold text-2xl'>
           Hey, Im Eli from a suburb of Phoenix, Arizona. <br /> Im currently
           developing my skills as a Software developer
+        </p>
+        <p className='text-sky-500 font-kode-mono font-bold text-2xl mt-20'>
+          Technologies that I am able to program with is <br />
+          Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
+          MongoDB
         </p>
       </div>
     </>

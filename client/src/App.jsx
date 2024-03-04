@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div
-      className='bg-cover bg-center h-screen'
+      className='bg-cover bg-center h-screen sticky'
       style={{
         backgroundImage: `url(${gifUrl})`,
       }}
