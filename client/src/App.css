@@ -4,7 +4,16 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
+  .aspect-w-1 {
+    width: 100%;
+  }
+  .aspect-h-1 {
+    height: 100%;
+  }
   .sideBarText {
     @apply p-3;
+  }
+  .projectDivs {
+    @apply aspect-w-1 aspect-h-1 bg-gray-300 h-72 w-72 rounded-lg shadow-sm shadow-gray-500;
   }
 }

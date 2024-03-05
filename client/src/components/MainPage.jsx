@@ -158,9 +158,37 @@ export default function MainPage() {
           <div className='flex flex-col text-center justify-center h-screen items-center'>
             <p className='leading-loose'>
               Technologies that I am able to program with are <br />
-              Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
-              MongoDB
             </p>
+            <div>
+              <p>HTML</p>
+            </div>
+            <div>
+              <p>CSS</p>
+            </div>
+            <div>
+              <p>Tailwindcss</p>
+            </div>
+            <div>
+              <p>Javascript</p>
+            </div>
+            <div>
+              <p>React</p>
+            </div>
+            <div>
+              <p>Node.js</p>
+            </div>
+            <div>
+              <p>Express</p>
+            </div>
+            <div>
+              <p>Git</p>
+            </div>
+            <div>
+              <p>Linux</p>
+            </div>
+            <div>
+              <p>MongoDB</p>
+            </div>
           </div>
         </div>
         <div className={gridClassName}>
@@ -168,13 +196,13 @@ export default function MainPage() {
             <h1 className='text-gray-200 text-3xl font-kode-mono font-bold mb-4'>
               Projects
             </h1>
-            <div className='grid grid-cols-3 gap-10 bg-gray-200 p-16 rounded-lg shadow-lg shadow-gray-200'>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-200 h-60 w-60 rounded-lg'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-200 h-60 w-60 rounded-lg'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-200 h-60 w-60 rounded-lg'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-200 h-60 w-60 rounded-lg'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-200 h-60 w-60 rounded-lg'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-200 h-60 w-60 rounded-lg'></div>
+            <div className='grid grid-cols-3 gap-10 bg-gray-200 p-10 rounded-lg shadow-lg shadow-gray-200'>
+              <div className='projectDivs'></div>
+              <div className='projectDivs'></div>
+              <div className='projectDivs'></div>
+              <div className='projectDivs'></div>
+              <div className='projectDivs'></div>
+              <div className='projectDivs'></div>
             </div>
           </div>
         </div>
