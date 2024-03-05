@@ -156,38 +156,40 @@ export default function MainPage() {
         </div>
         <div className={secondParaClassName}>
           <div className='flex flex-col text-center justify-center h-screen items-center'>
-            <p className='leading-loose'>
+            <p className='leading-loose mb-6'>
               Technologies that I am able to program with are <br />
             </p>
-            <div>
-              <p>HTML</p>
-            </div>
-            <div>
-              <p>CSS</p>
-            </div>
-            <div>
-              <p>Tailwindcss</p>
-            </div>
-            <div>
-              <p>Javascript</p>
-            </div>
-            <div>
-              <p>React</p>
-            </div>
-            <div>
-              <p>Node.js</p>
-            </div>
-            <div>
-              <p>Express</p>
-            </div>
-            <div>
-              <p>Git</p>
-            </div>
-            <div>
-              <p>Linux</p>
-            </div>
-            <div>
-              <p>MongoDB</p>
+            <div className='grid grid-cols-5 gap-5'>
+              <div className='techDivs'>
+                <p>HTML</p>
+              </div>
+              <div className='techDivs'>
+                <p>CSS</p>
+              </div>
+              <div className='techDivs'>
+                <p>Tailwindcss</p>
+              </div>
+              <div className='techDivs'>
+                <p>Javascript</p>
+              </div>
+              <div className='techDivs'>
+                <p>React</p>
+              </div>
+              <div className='techDivs'>
+                <p>Node.js</p>
+              </div>
+              <div className='techDivs'>
+                <p>Express</p>
+              </div>
+              <div className='techDivs'>
+                <p>Git</p>
+              </div>
+              <div className='techDivs'>
+                <p>Linux</p>
+              </div>
+              <div className='techDivs'>
+                <p>MongoDB</p>
+              </div>
             </div>
           </div>
         </div>

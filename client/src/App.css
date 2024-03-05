@@ -10,6 +10,9 @@
   .aspect-h-1 {
     height: 100%;
   }
+  .techDivs {
+    @apply bg-gray-600 p-3 m-1 rounded-lg border-2 border-gray-200;
+  }
   .sideBarText {
     @apply p-3;
   }
