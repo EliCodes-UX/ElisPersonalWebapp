@@ -110,8 +110,9 @@ export default function MainPage() {
 
   return (
     <>
-      <div className='flex justify-start pl-2 pr-2 text-amber-300 fixed h-screen items-center bg-gray-600'>
-        <ul className='flex flex-col text-lg'>
+      <div className='flex flex-col justify-between pl-2 pr-2 text-amber-300 fixed h-screen items-center bg-gray-600'>
+        <div className='bg-black rounded-full h-10 w-10 mt-4'></div>
+        <ul className='flex flex-col text-lg justify-center mb-80'>
           <li className='sideBarText'>
             <button
               onClick={handleAboutClick}
