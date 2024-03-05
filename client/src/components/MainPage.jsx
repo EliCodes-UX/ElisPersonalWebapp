@@ -60,7 +60,7 @@ export default function MainPage() {
   useEffect(() => {
     setFirstParaClassName(
       showFirstParagraph
-        ? 'text-sky-500 font-kode-mono font-bold text-2xl animate-fade-up animate-duration-1000 animate-ease-in'
+        ? 'text-sky-500 font-kode-mono font-bold text-2xl mt-20 mb-20 animate-fade-up animate-duration-1000 animate-ease-in'
         : 'hidden'
     );
     setSecondParaClassName(
@@ -134,30 +134,36 @@ export default function MainPage() {
           </p>
         </div>
         <div className={secondParaClassName}>
-          <p>
-            Technologies that I am able to program with are <br />
-            Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
-            MongoDB
-          </p>
+          <div className='flex flex-col text-center justify-center h-screen items-center'>
+            <p>
+              Technologies that I am able to program with are <br />
+              Html, Css, tailwindcss, Javascript, React, Node.js, Express, and
+              MongoDB
+            </p>
+          </div>
         </div>
         <div className={gridClassName}>
-          <div className='flex items-center justify-center h-screen w-screen'>
-            <div className='grid grid-cols-3 gap-40 bg-white p-20'>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-40 w-40'></div>
+          <div className='flex flex-col items-center justify-center h-half w-half'>
+            <h1 className='text-sky-500 text-3xl font-kode-mono font-bold'>
+              Projects
+            </h1>
+            <div className='grid grid-cols-3 gap-10 bg-white p-16'>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
             </div>
           </div>
         </div>
-        <div className='flex flex-col text-center justify-center h-screen items-center'>
-          <div className={contactClassName}>
+        <div className={contactClassName}>
+          <div className='flex flex-col text-center justify-center h-screen items-center'>
             <p>You can contact me and we can build something great</p>
           </div>
         </div>
       </div>
+      <div></div>
     </>
   );
 }
