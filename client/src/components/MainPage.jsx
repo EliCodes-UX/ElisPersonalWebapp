@@ -110,7 +110,7 @@ export default function MainPage() {
 
   return (
     <>
-      <div className='flex justify-start pl-10 text-amber-300 fixed h-screen items-center'>
+      <div className='flex justify-start pl-2 pr-2 text-amber-300 fixed h-screen items-center bg-gray-900'>
         <ul className='flex flex-col text-lg'>
           <li className='sideBarText'>
             <button onClick={handleAboutClick}>About</button>
@@ -144,16 +144,16 @@ export default function MainPage() {
         </div>
         <div className={gridClassName}>
           <div className='flex flex-col items-center justify-center h-half w-half'>
-            <h1 className='text-sky-500 text-3xl font-kode-mono font-bold'>
+            <h1 className='text-sky-500 text-3xl font-kode-mono font-bold mb-4'>
               Projects
             </h1>
-            <div className='grid grid-cols-3 gap-10 bg-white p-16'>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
-              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60'></div>
+            <div className='grid grid-cols-3 gap-10 bg-sky-500 p-16 rounded-lg shadow-lg shadow-sky-300'>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60 rounded-lg'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60 rounded-lg'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60 rounded-lg'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60 rounded-lg'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60 rounded-lg'></div>
+              <div className='aspect-w-1 aspect-h-1 bg-gray-300 h-60 w-60 rounded-lg'></div>
             </div>
           </div>
         </div>
