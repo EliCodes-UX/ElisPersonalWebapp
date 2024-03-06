@@ -3,7 +3,7 @@ import EliImage from '../assets/eliPort.jpg';
 import twitter from '../assets/icons-twitterx.svg';
 import linkedIn from '../assets/icons-linkedin.svg';
 import gitHub from '../assets/icon-github-3.svg';
-import discord from '../assets/icons-discord.svg';
+// import discord from '../assets/icons-discord.svg';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -279,22 +279,25 @@ export default function MainPage() {
       <div className='flex items-center justify-center pr-4 absolute right-0 top-1/4 text-gray-600'>
         <ul className='flex flex-col justify-center items-center'>
           <li className='sideBarText'>
-            <a>
+            <a href='https://twitter.com/EliNotElijah1' target='_blank'>
               <img src={twitter} />
             </a>
           </li>
-          <li className='sideBarText'>
+          {/* <li className='sideBarText'>
             <a>
               <img src={discord} />
             </a>
-          </li>
+          </li> */}
           <li className='sideBarText'>
-            <a>
+            <a
+              href='https://www.linkedin.com/in/eli-bonner-b0a0172b8'
+              target='_blank'
+            >
               <img src={linkedIn} />
             </a>
           </li>
           <li className='sideBarText'>
-            <a>
+            <a href='https://github.com/EliCodes-UX' target='_blank'>
               <img src={gitHub} className='h-16 w-16' />
             </a>
           </li>
