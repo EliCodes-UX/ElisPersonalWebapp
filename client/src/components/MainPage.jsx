@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import EliImage from '../assets/eliPort.jpg';
+import twitter from '../assets/icons-twitterx.svg';
+import linkedIn from '../assets/icons-linkedin.svg';
+import gitHub from '../assets/icon-github-3.svg';
+import discord from '../assets/icons-discord.svg';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -272,12 +276,28 @@ export default function MainPage() {
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center pr-4 absolute right-0 top-1/2 text-gray-600'>
-        <ul>
-          <li className='sideBarText'>linkedin</li>
-          <li className='sideBarText'>github</li>
-          <li className='sideBarText'>discord</li>
-          <li className='sideBarText'>x</li>
+      <div className='flex items-center justify-center pr-4 absolute right-0 top-1/4 text-gray-600'>
+        <ul className='flex flex-col justify-center items-center'>
+          <li className='sideBarText'>
+            <a>
+              <img src={twitter} />
+            </a>
+          </li>
+          <li className='sideBarText'>
+            <a>
+              <img src={discord} />
+            </a>
+          </li>
+          <li className='sideBarText'>
+            <a>
+              <img src={linkedIn} />
+            </a>
+          </li>
+          <li className='sideBarText'>
+            <a>
+              <img src={gitHub} className='h-16 w-16' />
+            </a>
+          </li>
         </ul>
       </div>
     </div>
