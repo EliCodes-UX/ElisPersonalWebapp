@@ -121,7 +121,7 @@ export default function MainPage() {
   };
 
   return (
-    <>
+    <div className='flex flex-row'>
       <div className='flex flex-col justify-between pl-2 pr-2 text-amber-300 fixed h-screen items-center bg-gray-600'>
         <div className='bg-black rounded-full h-10 w-10 mt-4'></div>
         <ul className='flex flex-col text-lg justify-center mb-80'>
@@ -159,7 +159,7 @@ export default function MainPage() {
           </li>
         </ul>
       </div>
-      <div className='flex flex-col text-center justify-center h-screen items-center'>
+      <div className='flex flex-col text-center justify-center h-screen w-screen items-center'>
         {showImage && (
           <img
             src={EliImage}
@@ -170,7 +170,7 @@ export default function MainPage() {
           <p className='leading-loose'>
             Hey, Im{' '}
             <span
-              className='hover:text-amber-300'
+              className='hover:text-amber-300 hover:cursor-pointer border-b-2 border-gray-300'
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOut}
             >
@@ -272,7 +272,14 @@ export default function MainPage() {
           </div>
         </div>
       </div>
-      <div></div>
-    </>
+      <div className='flex items-center justify-center pr-4 absolute right-0 top-1/2 text-gray-600'>
+        <ul>
+          <li className='sideBarText'>linkedin</li>
+          <li className='sideBarText'>github</li>
+          <li className='sideBarText'>discord</li>
+          <li className='sideBarText'>x</li>
+        </ul>
+      </div>
+    </div>
   );
 }
