@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import EliImage from '../assets/eliPortrait.jpg';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -158,6 +159,12 @@ export default function MainPage() {
           </li>
         </ul>
       </div>
+      {showImage && (
+        <img
+          src={EliImage}
+          className='h-auto w-auto max-h-72 max-w-72 absolute top-14 right-80'
+        />
+      )}
       <div className='flex flex-col text-center justify-center h-screen items-center'>
         <div className={firstParaClassName}>
           <p className='leading-loose'>
