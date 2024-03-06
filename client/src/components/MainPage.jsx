@@ -10,6 +10,17 @@ export default function MainPage() {
   const [secondParaClassName, setSecondParaClassName] = useState('');
   const [gridClassName, setGridClassName] = useState('');
   const [contactClassName, setContactClassName] = useState('');
+  const [showImage, setShowImage] = useState(false);
+
+  const handleMouseOver = () => {
+    setShowImage(true);
+    console.log('hovers');
+  };
+
+  const handleMouseOut = () => {
+    setShowImage(false);
+    console.log('left');
+  };
 
   useEffect(() => {
     const handleScroll = event => {
@@ -40,7 +51,7 @@ export default function MainPage() {
           }
 
           setScrolling(false);
-        }, 1000);
+        }, 400);
       }
     };
 
@@ -150,7 +161,15 @@ export default function MainPage() {
       <div className='flex flex-col text-center justify-center h-screen items-center'>
         <div className={firstParaClassName}>
           <p className='leading-loose'>
-            Hey, Im Eli from a suburb of Phoenix, Arizona.
+            Hey, Im{' '}
+            <span
+              className='hover:text-amber-300'
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+            >
+              Eli B.
+            </span>{' '}
+            from a suburb of Phoenix, Arizona.
             <br /> Im currently developing my skills as a Software developer
           </p>
         </div>
