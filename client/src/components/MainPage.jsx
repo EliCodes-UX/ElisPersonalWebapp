@@ -160,35 +160,64 @@ export default function MainPage() {
               Technologies that I am able to program with are <br />
             </p>
             <div className='grid grid-cols-5 gap-5'>
-              <div className='techDivs'>
-                <p>HTML</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a
+                  href='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics'
+                  target='_blank'
+                >
+                  HTML
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>CSS</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a
+                  href='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics'
+                  target='_blank'
+                >
+                  CSS
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>Tailwindcss</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a href='https://tailwindcss.com/' target='_blank'>
+                  Tailwindcss
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>Javascript</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a
+                  href='https://developer.mozilla.org/en-US/docs/Glossary/JavaScript'
+                  target='_blank'
+                >
+                  Javascript
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>React</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in '>
+                <a href='https://react.dev/' target='_blank'>
+                  React
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>Node.js</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a href='https://nodejs.org/en/about' target='_blank'>
+                  Node.js
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>Express</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a href='https://expressjs.com/' target='_blank'>
+                  Express
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>Git</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a href='https://git-scm.com/' target='_blank'>
+                  Git
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>Linux</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a href='https://www.linux.com/what-is-linux/' target='_blank'>
+                  Linux
+                </a>
               </div>
-              <div className='techDivs'>
-                <p>MongoDB</p>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+                <a href='https://www.mongodb.com/' target='_blank'>
+                  MongoDB
+                </a>
               </div>
             </div>
           </div>
@@ -211,7 +240,8 @@ export default function MainPage() {
         <div className={contactClassName}>
           <div className='flex flex-col text-center justify-center h-screen items-center'>
             <p className='leading-loose'>
-              You can contact me and we can build something great
+              You can contact me at Eli.bonner@outlook.com <br /> and we can
+              build something great
             </p>
           </div>
         </div>
