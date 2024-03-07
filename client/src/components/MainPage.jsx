@@ -3,7 +3,7 @@ import EliImage from '../assets/eliPort.jpg';
 import twitter from '../assets/icons-twitterx.svg';
 import linkedIn from '../assets/icons-linkedin.svg';
 import gitHub from '../assets/icon-github-3.svg';
-// import discord from '../assets/icons-discord.svg';
+import MernMessages from '../assets/mernMessages.png';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -258,7 +258,13 @@ export default function MainPage() {
               Projects
             </h1>
             <div className='grid grid-cols-3 gap-10 bg-gray-200 p-10 rounded-lg shadow-lg shadow-gray-200'>
-              <div className='projectDivs'></div>
+              <div className='projectDivs'>
+                <div>
+                  <h2 className='font-kode-mono'>MernMessaging</h2>
+                  <img src={MernMessages} />
+                </div>
+                <p>created a small messenging app clone</p>
+              </div>
               <div className='projectDivs'></div>
               <div className='projectDivs'></div>
               <div className='projectDivs'></div>
@@ -270,8 +276,8 @@ export default function MainPage() {
         <div className={contactClassName}>
           <div className='flex flex-col text-center justify-center h-screen items-center'>
             <p className='leading-loose'>
-              You can contact me at Eli.bonner@outlook.com <br /> and we can
-              build something great
+              connect with me at Eli.bonner@outlook.com <br /> and we can build
+              something great!!
             </p>
           </div>
         </div>
