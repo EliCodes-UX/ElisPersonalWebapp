@@ -4,6 +4,8 @@ import twitter from '../assets/icons-twitterx.svg';
 import linkedIn from '../assets/icons-linkedin.svg';
 import gitHub from '../assets/icon-github-3.svg';
 import MernMessages from '../assets/mernMessages.png';
+import JSLibrary from '../assets/javascriptLibrary.png';
+import BlogApp from '../assets/blogApp.png';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -263,10 +265,21 @@ export default function MainPage() {
                   <h2 className='font-kode-mono'>MernMessaging</h2>
                   <img src={MernMessages} />
                 </div>
-                <p>created a small messenging app clone</p>
+                <p className='m-3'>created a small messenging app clone.</p>
               </div>
-              <div className='projectDivs'></div>
-              <div className='projectDivs'></div>
+              <div className='projectDivs'>
+                <div>
+                  <h2 className='font-kode-mono'>javascriptLibrary</h2>
+                  <img className='mt-1' src={JSLibrary} />
+                  <p className='mt-3'>
+                    created a small app to place books in a library
+                  </p>
+                </div>
+              </div>
+              <div className='projectDivs'>
+                <h2>BlogApp</h2>
+                <img src={BlogApp} />
+              </div>
               <div className='projectDivs'></div>
               <div className='projectDivs'></div>
               <div className='projectDivs'></div>
