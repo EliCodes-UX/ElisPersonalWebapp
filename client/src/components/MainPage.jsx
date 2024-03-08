@@ -6,6 +6,7 @@ import gitHub from '../assets/icon-github-3.svg';
 import MernMessages from '../assets/mernMessages.png';
 import JSLibrary from '../assets/javascriptLibrary.png';
 import BlogApp from '../assets/blogApp.png';
+import Shop from '../assets/shop.png';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -283,7 +284,11 @@ export default function MainPage() {
                   created a simple blog app to put your ideas on the web
                 </p>
               </div>
-              <div className='projectDivs'></div>
+              <div className='projectDivs'>
+                <h2 className='mb-4'>ShoppingCart</h2>
+                <img src={Shop} />
+                <p className='mt-3'>created a frontend only shopping cart</p>
+              </div>
               <div className='projectDivs'></div>
               <div className='projectDivs'></div>
             </div>
