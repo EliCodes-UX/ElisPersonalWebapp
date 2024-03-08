@@ -286,7 +286,7 @@ export default function MainPage() {
                 </a>
               </div>
               <div className='projectDivs'>
-                <a>
+                <a href='https://elis-mern-blog.netlify.app/' target='_blank'>
                   <h2 className='font-kode-mono'>BlogApp</h2>
                   <img src={BlogApp} />
                   <p className='mt-2'>
@@ -295,9 +295,11 @@ export default function MainPage() {
                 </a>
               </div>
               <div className='projectDivs'>
-                <h2 className='mb-4 font-kode-mono'>ShoppingCart</h2>
-                <img src={Shop} />
-                <p className='mt-3'>created a frontend only shopping cart</p>
+                <a href='https://topshoppingcart.netlify.app/'>
+                  <h2 className='mb-4 font-kode-mono'>ShoppingCart</h2>
+                  <img src={Shop} />
+                  <p className='mt-3'>created a frontend only shopping cart</p>
+                </a>
               </div>
               <div className='projectDivs'>
                 <h2 className='mb-3 font-kode-mono'>SignupPage</h2>
