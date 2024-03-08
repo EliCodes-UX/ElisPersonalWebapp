@@ -7,6 +7,8 @@ import MernMessages from '../assets/mernMessages.png';
 import JSLibrary from '../assets/javascriptLibrary.png';
 import BlogApp from '../assets/blogApp.png';
 import Shop from '../assets/shop.png';
+import signup from '../assets/signupPage.png';
+import Admin from '../assets/admin.png';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -285,12 +287,17 @@ export default function MainPage() {
                 </p>
               </div>
               <div className='projectDivs'>
-                <h2 className='mb-4'>ShoppingCart</h2>
+                <h2 className='mb-4 font-kode-mono'>ShoppingCart</h2>
                 <img src={Shop} />
                 <p className='mt-3'>created a frontend only shopping cart</p>
               </div>
-              <div className='projectDivs'></div>
-              <div className='projectDivs'></div>
+              <div className='projectDivs'>
+                <h2>SignupPage</h2>
+                <img src={signup} />
+              </div>
+              <div className='projectDivs'>
+                <h2>AdminPage</h2>
+              </div>
             </div>
           </div>
         </div>
