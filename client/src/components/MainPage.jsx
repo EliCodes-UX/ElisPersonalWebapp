@@ -269,7 +269,7 @@ export default function MainPage() {
               </div>
               <div className='projectDivs'>
                 <div>
-                  <h2 className='font-kode-mono'>javascriptLibrary</h2>
+                  <h2 className='font-kode-mono'>JavascriptLibrary</h2>
                   <img className='mt-1' src={JSLibrary} />
                   <p className='mt-3'>
                     created a small app to place books in a library
@@ -277,8 +277,11 @@ export default function MainPage() {
                 </div>
               </div>
               <div className='projectDivs'>
-                <h2>BlogApp</h2>
+                <h2 className='font-kode-mono'>BlogApp</h2>
                 <img src={BlogApp} />
+                <p className='mt-2'>
+                  created a simple blog app to put your ideas on the web
+                </p>
               </div>
               <div className='projectDivs'></div>
               <div className='projectDivs'></div>
