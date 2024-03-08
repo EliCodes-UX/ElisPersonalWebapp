@@ -130,8 +130,8 @@ export default function MainPage() {
   };
 
   return (
-    <div className='flex flex-row'>
-      <div className='flex flex-col justify-between pl-2 pr-2 text-amber-300 fixed h-screen items-center bg-gray-600'>
+    <div className='grid grid-cols-3'>
+      <div className='col-span-1 flex flex-col justify-between pl-2 pr-2 text-amber-300 fixed h-screen items-center bg-gray-600'>
         <div className='bg-black rounded-full h-10 w-10 mt-4'></div>
         <ul className='flex flex-col text-lg justify-center mb-80'>
           <li className='sideBarText'>
@@ -168,7 +168,7 @@ export default function MainPage() {
           </li>
         </ul>
       </div>
-      <div className='flex flex-col text-center justify-center h-screen w-screen items-center'>
+      <div className='col-span-2 flex flex-col text-center justify-center h-screen items-center'>
         {showImage && (
           <img
             src={EliImage}
@@ -292,11 +292,14 @@ export default function MainPage() {
                 <p className='mt-3'>created a frontend only shopping cart</p>
               </div>
               <div className='projectDivs'>
-                <h2>SignupPage</h2>
+                <h2 className='mb-3 font-kode-mono'>SignupPage</h2>
                 <img src={signup} />
+                <p>created a mock signup page</p>
               </div>
               <div className='projectDivs'>
-                <h2>AdminPage</h2>
+                <h2 className='mb-3'>AdminPage</h2>
+                <img src={Admin} />
+                <p>created a mock admin page for users</p>
               </div>
             </div>
           </div>
