@@ -167,7 +167,7 @@ export default function MainPage() {
           </li>
         </ul>
       </div>
-      <div className='flex flex-col text-center justify-center relative h-screen right-auto items-center ml-auto mr-auto w-3/4'>
+      <div className='flex flex-col text-center justify-center relative h-screen right-auto items-center ml-auto mr-auto w-3/4 overflow-hidden'>
         {showImage && (
           <img
             src={EliImage}
@@ -257,17 +257,19 @@ export default function MainPage() {
           </div>
         </div>
         <div className={gridClassName}>
-          <div className='flex flex-col items-center justify-center h-half w-half'>
-            <h1 className='text-gray-200 text-3xl font-kode-mono font-bold mb-4'>
+          <div className='flex flex-col items-center justify-center h-half w-half mt-2 mb-4'>
+            <h1 className='text-gray-200 text-3xl font-kode-mono font-bold mb-3 mt-4'>
               Projects
             </h1>
-            <div className='grid grid-cols-3 gap-2 bg-gray-200 p-5 w-auto rounded-lg shadow-lg shadow-gray-200'>
+            <div className='grid grid-cols-3 gap-2 bg-gray-600 p-4 w-auto h-auto rounded-lg shadow-lg shadow-gray-500'>
               <div className='projectDivs'>
-                <div>
-                  <h2 className='font-kode-mono'>MernMessaging</h2>
-                  <img src={MernMessages} />
-                </div>
-                <p className='m-3'>created a small messenging app clone.</p>
+                <a href='https://mernmessaging.netlify.app/' target='_blank'>
+                  <div>
+                    <h2 className='font-kode-mono'>MernMessaging</h2>
+                    <img src={MernMessages} />
+                  </div>
+                  <p className='m-3'>created a small messenging app clone.</p>
+                </a>
               </div>
               <div className='projectDivs'>
                 <div>
