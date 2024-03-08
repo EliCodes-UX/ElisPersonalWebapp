@@ -272,20 +272,27 @@ export default function MainPage() {
                 </a>
               </div>
               <div className='projectDivs'>
-                <div>
-                  <h2 className='font-kode-mono'>JavascriptLibrary</h2>
-                  <img className='mt-1' src={JSLibrary} />
-                  <p className='mt-3'>
-                    created a small app to place books in a library
-                  </p>
-                </div>
+                <a
+                  href='https://elicodes-ux.github.io/TOP-Library/'
+                  target='_blank'
+                >
+                  <div>
+                    <h2 className='font-kode-mono'>JavascriptLibrary</h2>
+                    <img className='mt-1' src={JSLibrary} />
+                    <p className='mt-3'>
+                      created a small app to place books in a library
+                    </p>
+                  </div>
+                </a>
               </div>
               <div className='projectDivs'>
-                <h2 className='font-kode-mono'>BlogApp</h2>
-                <img src={BlogApp} />
-                <p className='mt-2'>
-                  created a simple blog app to put your ideas on the web
-                </p>
+                <a>
+                  <h2 className='font-kode-mono'>BlogApp</h2>
+                  <img src={BlogApp} />
+                  <p className='mt-2'>
+                    created a simple blog app to put your ideas on the web
+                  </p>
+                </a>
               </div>
               <div className='projectDivs'>
                 <h2 className='mb-4 font-kode-mono'>ShoppingCart</h2>
