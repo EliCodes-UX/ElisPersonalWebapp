@@ -130,10 +130,9 @@ export default function MainPage() {
   };
 
   return (
-    <div className='grid grid-cols-3'>
-      <div className='col-span-1 flex flex-col justify-between pl-2 pr-2 text-amber-300 fixed h-screen items-center bg-gray-600'>
-        <div className='bg-black rounded-full h-10 w-10 mt-4'></div>
-        <ul className='flex flex-col text-lg justify-center mb-80'>
+    <div className='flex flex-grow w-screen'>
+      <div className='flex flex-col  pl-3 pr-2 text-amber-300 fixed h-screen items-center bg-gray-600 justify-center'>
+        <ul className='flex flex-col text-lg justify-center mb-3s sticky'>
           <li className='sideBarText'>
             <button
               onClick={handleAboutClick}
@@ -168,7 +167,7 @@ export default function MainPage() {
           </li>
         </ul>
       </div>
-      <div className='col-span-2 flex flex-col text-center justify-center h-screen items-center'>
+      <div className='flex flex-col text-center justify-center relative h-screen right-auto items-center ml-auto mr-auto'>
         {showImage && (
           <img
             src={EliImage}
@@ -194,7 +193,7 @@ export default function MainPage() {
             <p className='leading-loose mb-6'>
               Technologies that I am able to program with are <br />
             </p>
-            <div className='grid grid-cols-5 gap-5'>
+            <div className='grid grid-cols-3 gap-3'>
               <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
                 <a
                   href='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics'
@@ -249,7 +248,7 @@ export default function MainPage() {
                   Linux
                 </a>
               </div>
-              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in'>
+              <div className='techDivs hover:animate-jump animate-once animate-duration-1000 animate-ease-in col-end-2'>
                 <a href='https://www.mongodb.com/' target='_blank'>
                   MongoDB
                 </a>
