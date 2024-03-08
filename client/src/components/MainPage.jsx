@@ -295,21 +295,28 @@ export default function MainPage() {
                 </a>
               </div>
               <div className='projectDivs'>
-                <a href='https://topshoppingcart.netlify.app/'>
+                <a href='https://topshoppingcart.netlify.app/' target='_blank'>
                   <h2 className='mb-4 font-kode-mono'>ShoppingCart</h2>
                   <img src={Shop} />
                   <p className='mt-3'>created a frontend only shopping cart</p>
                 </a>
               </div>
               <div className='projectDivs'>
-                <h2 className='mb-3 font-kode-mono'>SignupPage</h2>
-                <img src={signup} />
-                <p>created a mock signup page</p>
+                <a
+                  href='https://elicodes-ux.github.io/TOP-Signup/'
+                  target='_blank'
+                >
+                  <h2 className='mb-3 font-kode-mono'>SignupPage</h2>
+                  <img src={signup} />
+                  <p>created a mock signup page</p>
+                </a>
               </div>
               <div className='projectDivs'>
-                <h2 className='mb-3'>AdminPage</h2>
-                <img src={Admin} />
-                <p>created a mock admin page for users</p>
+                <a href='https://elicodes-ux.github.io/admin/' target='_blank'>
+                  <h2 className='mb-3'>AdminPage</h2>
+                  <img src={Admin} />
+                  <p>created a mock admin page for users</p>
+                </a>
               </div>
             </div>
           </div>
