@@ -4,11 +4,12 @@ import twitter from '../assets/icons-twitterx.svg';
 import linkedIn from '../assets/icons-linkedin.svg';
 import gitHub from '../assets/icon-github-3.svg';
 import MernMessages from '../assets/mernMessages.png';
-import JSLibrary from '../assets/javascriptLibrary.png';
+// import JSLibrary from '../assets/javascriptLibrary.png';
 import BlogApp from '../assets/blogApp.png';
 import Shop from '../assets/shop.png';
 import signup from '../assets/signupPage.png';
 import Admin from '../assets/admin.png';
+import snakeGame from '../assets/snakeapp.png';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -167,7 +168,7 @@ export default function MainPage() {
           </li>
         </ul>
       </div>
-      <div className='flex flex-col text-center justify-center relative h-screen right-auto items-center ml-auto mr-auto w-3/4 overflow-hidden'>
+      <div className='flex flex-col text-center justify-center relative h-screen right-auto items-center ml-auto mr-auto w-3/4 overflow-hidden pt-3 pb-3'>
         {showImage && (
           <img
             src={EliImage}
@@ -257,7 +258,7 @@ export default function MainPage() {
           </div>
         </div>
         <div className={gridClassName}>
-          <div className='flex flex-col items-center justify-center h-half w-half mt-2 mb-4'>
+          <div className='flex flex-col items-center justify-center h-half w-half mt-2 mb-4 pb-3 pt-3'>
             <h1 className='text-gray-200 text-3xl font-kode-mono font-bold mb-3 mt-4'>
               Projects
             </h1>
@@ -273,14 +274,14 @@ export default function MainPage() {
               </div>
               <div className='projectDivs'>
                 <a
-                  href='https://elicodes-ux.github.io/TOP-Library/'
+                  href='https://elicodes-ux.github.io/snakeGame/'
                   target='_blank'
                 >
                   <div>
                     <h2 className='font-kode-mono'>JavascriptLibrary</h2>
-                    <img className='mt-1' src={JSLibrary} />
+                    <img className='mt-1' src={snakeGame} />
                     <p className='mt-3'>
-                      created a small app to place books in a library
+                      created a small yet fun game of snake
                     </p>
                   </div>
                 </a>
@@ -324,8 +325,14 @@ export default function MainPage() {
         <div className={contactClassName}>
           <div className='flex flex-col text-center justify-center h-screen items-center'>
             <p className='leading-loose'>
-              connect with me at Eli.bonner@outlook.com <br /> and we can build
-              something great!!
+              connect with me at{' '}
+              <a
+                className='hover:text-amber-300 hover:cursor-pointer border-b-2 border-gray-300'
+                href='mailto:Eli.bonner@outlook.com'
+              >
+                Eli.bonner@outlook.com
+              </a>{' '}
+              <br /> and we can build something great!!
             </p>
           </div>
         </div>
