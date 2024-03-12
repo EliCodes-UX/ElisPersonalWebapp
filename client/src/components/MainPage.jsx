@@ -7,9 +7,10 @@ import MernMessages from '../assets/mernMessages.png';
 // import JSLibrary from '../assets/javascriptLibrary.png';
 import BlogApp from '../assets/blogApp.png';
 import Shop from '../assets/shop.png';
-import signup from '../assets/signupPage.png';
+// import signup from '../assets/signupPage.png';
 import Admin from '../assets/admin.png';
 import snakeGame from '../assets/snakeapp.png';
+import heartGame from '../assets/heartGame.png';
 
 export default function MainPage() {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -281,7 +282,7 @@ export default function MainPage() {
                     <h2 className='font-kode-mono'>JavascriptLibrary</h2>
                     <img className='mt-1' src={snakeGame} />
                     <p className='mt-3'>
-                      created a small yet fun game of snake
+                      created a small yet fun game of snake.
                     </p>
                   </div>
                 </a>
@@ -291,7 +292,7 @@ export default function MainPage() {
                   <h2 className='font-kode-mono'>BlogApp</h2>
                   <img src={BlogApp} />
                   <p className='mt-2'>
-                    created a simple blog app to put your ideas on the web
+                    created a simple blog app to put your ideas on the web.
                   </p>
                 </a>
               </div>
@@ -299,7 +300,7 @@ export default function MainPage() {
                 <a href='https://topshoppingcart.netlify.app/' target='_blank'>
                   <h2 className='mb-4 font-kode-mono'>ShoppingCart</h2>
                   <img src={Shop} />
-                  <p className='mt-3'>created a frontend only shopping cart</p>
+                  <p className='mt-3'>created a frontend only shopping cart.</p>
                 </a>
               </div>
               <div className='projectDivs'>
@@ -308,15 +309,15 @@ export default function MainPage() {
                   target='_blank'
                 >
                   <h2 className='mb-3 font-kode-mono'>SignupPage</h2>
-                  <img src={signup} />
-                  <p>created a mock signup page</p>
+                  <img src={heartGame} />
+                  <p>created a mock wheres waldo game but with snails.</p>
                 </a>
               </div>
               <div className='projectDivs'>
                 <a href='https://elicodes-ux.github.io/admin/' target='_blank'>
                   <h2 className='mb-3'>AdminPage</h2>
                   <img src={Admin} />
-                  <p>created a mock admin page for users</p>
+                  <p>created a mock admin page for users.</p>
                 </a>
               </div>
             </div>
