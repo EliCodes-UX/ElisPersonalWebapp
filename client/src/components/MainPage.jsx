@@ -259,7 +259,7 @@ export default function MainPage() {
           </div>
         </div>
         <div className={gridClassName}>
-          <div className='flex flex-col items-center justify-center h-half w-half mt-2 mb-4 pb-3 pt-3'>
+          <div className='flex flex-col flex-grow items-center justify-center h-half w-half mt-20 mb-20 pb-3 pt-3'>
             <h1 className='text-gray-200 text-3xl font-kode-mono font-bold mb-3 mt-4'>
               Projects
             </h1>
