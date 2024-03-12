@@ -4,7 +4,7 @@ import twitter from '../assets/icons-twitterx.svg';
 import linkedIn from '../assets/icons-linkedin.svg';
 import gitHub from '../assets/icon-github-3.svg';
 import MernMessages from '../assets/mernMessages.png';
-import JSLibrary from '../assets/javascriptLibrary.png';
+// import JSLibrary from '../assets/javascriptLibrary.png';
 import BlogApp from '../assets/blogApp.png';
 import Shop from '../assets/shop.png';
 import signup from '../assets/signupPage.png';
